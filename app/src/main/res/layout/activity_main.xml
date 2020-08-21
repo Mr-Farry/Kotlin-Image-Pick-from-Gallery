@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+  <mehdi.sakout.fancybuttons.FancyButton
+          android:id="@+id/image_pick_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="50dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:paddingBottom="16dp"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp"
+          android:paddingTop="16dp"
+          fancy:fb_borderColor="#FFFFFF"
+          fancy:fb_borderWidth="1dp"
+          fancy:fb_defaultColor="@color/colorPrimary"
+          fancy:fb_focusColor="@color/colorAccent"
+          fancy:fb_radius="30dp"
+          fancy:fb_text="Pick Image"
+          fancy:fb_textColor="#FFFFFF" />
+
+  <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/image_pick_button"
+          android:id="@+id/image_view"
+          android:src="@color/colorAccent"
+  />
+</RelativeLayout>
